@@ -1,6 +1,6 @@
 # Portfolio
 
-Brief description of your project and what it does.
+Overview on my work as a prorammer in the software engineering field. 
 
 ## Table of Contents
 
