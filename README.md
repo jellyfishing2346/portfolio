@@ -19,7 +19,7 @@ Some personal information on who I am as a person
 # Skills
 List of skills I have obtained in my programming journey
 
-# Project
+# Projects
 Projects that I have made throughout my years as a college student
 
 # Contact
