@@ -24,24 +24,8 @@ html {
   scroll-behavior: smooth;
 }
 
-#home{
-    scroll-margin-top: 0.1%;
-}
-
-#about{
-    scroll-margin-top: 10%;
-}
-
-#skills{
-    scroll-margin-top: 10%;
-}
-
-#projects {
-    scroll-margin-top: 10%;
-}
-
-#contact {
-    scroll-margin-top: ;
+*{
+scroll-margin-top: 10%;
 }
 
 nav ul {
