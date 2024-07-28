@@ -1,4 +1,4 @@
-/* styles.css */
+/* Base Styles */
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
@@ -20,17 +20,14 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-html { 
-  scroll-behavior: smooth;
-}
-
-*{
-scroll-margin-top: 10%;
+html {
+    scroll-behavior: smooth;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    z-index: 1000;
 }
 
 nav ul li {
@@ -49,15 +46,28 @@ nav ul li a:hover {
     color: #adb5bd; /* Light Gray */
 }
 
+.section-offset {
+    position: relative; /* Ensure position is relative for absolute positioning */
+}
+
+.section-offset::before {
+    content: ''; /* Create an empty content block */
+    display: block; /* Make it a block element */
+    height: 100px; /* Match the height of the header */
+    margin-top: -100px; /* Negative margin to pull content up */
+    visibility: hidden; /* Hide it from view */
+}
+
 section {
     padding: 3rem 2rem;
-    margin: 1rem 0;
+    /*margin: 1rem 0;*/
     border-bottom: 1px solid #ddd;
     background-color: #fff;
     border-radius: 8px;
     max-width: 800px;
     margin: 2rem auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    scroll-margin-top: 100px; /* Adjust for sticky header height */
 }
 
 .intro {
