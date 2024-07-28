@@ -24,6 +24,10 @@ html {
   scroll-behavior: smooth;
 }
 
+#example{
+    scroll-margin-top: 200px;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
