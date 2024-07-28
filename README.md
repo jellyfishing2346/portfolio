@@ -4,7 +4,7 @@ Overview on my work as a prorammer in the software engineering field.
 
 ## Table of Contents
 
-- [Home] (#home)
+- [Home](#home)
 - [About Me](#aboutme)
 - [Skills](#skills)
 - [Project](#project)
