@@ -25,23 +25,23 @@ html {
 }
 
 #home{
-    scroll-margin-top: 10%;
+    scroll-margin-top: 0.25%;
 }
 
 #about{
-    scroll-margin-top: 10px;
+    scroll-margin-top: 10%;
 }
 
 #skills{
-    scroll-margin-top: 50px;
+    scroll-margin-top: 10%;
 }
 
 #projects {
-    scroll-margin-top: 50px;
+    scroll-margin-top: 10%;
 }
 
 #contact {
-    scroll-margin-top: 50px;
+    scroll-margin-top: ;
 }
 
 nav ul {
