@@ -24,28 +24,24 @@ html {
   scroll-behavior: smooth;
 }
 
-#example{
-    scroll-margin-top: 200px;
-}
-
 #home{
-    scroll-margin-top: 200px;
+    scroll-margin-top: 50px;
 }
 
 #about{
-    scroll-margin-top: 200px;
+    scroll-margin-top: 50px;
 }
 
 #skills{
-    scroll-margin-top: 200px;
+    scroll-margin-top: 50px;
 }
 
 #projects {
-    scroll-margin-top: 200px;
+    scroll-margin-top: 50px;
 }
 
 #contact {
-    scroll-margin-top: 200px;
+    scroll-margin-top: 50px;
 }
 
 nav ul {
