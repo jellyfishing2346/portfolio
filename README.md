@@ -7,7 +7,7 @@ Overview on my work as a prorammer in the software engineering field.
 - [Home](#home)
 - [About Me](#aboutme)
 - [Skills](#skills)
-- [Project](#project)
+- [Project](#projects)
 - [Contact](#contact)
 
 # Home
