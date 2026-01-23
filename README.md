@@ -1,4 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">👋 Hi, I'm jellyfishing2346</h1>
+
+Welcome to my software engineering portfolio! This site is a living showcase of my work, technical skills, and passion for building impactful products.
+
+---
+
+## About This Portfolio
+This website is more than a résumé—it's a hands-on demonstration of my approach to software engineering:
+
+- **Real Projects:** Explore a curated selection of my software engineering and data science projects, each with context, challenges, and outcomes.
+- **Tech Stack in Action:** See how I use modern frameworks like Next.js, React, and Tailwind CSS to deliver fast, accessible, and beautiful user experiences.
+- **Personal Touch:** Get to know me through my About section, where I share my journey, values, and the technologies I love.
+- **Let's Connect:** Reach out directly via the contact form—I'm always open to new opportunities and collaborations.
+
+---
+
+## Why This Site?
+I believe great engineering is about more than code—it's about solving real problems, learning continuously, and collaborating with others. This portfolio is my way of sharing that philosophy with you.
+
+---
+
+## Technologies Used
+- **Next.js** (App Directory)
+- **React**
+- **Tailwind CSS**
+- **TypeScript**
+- **EmailJS** (Contact form)
+- **React Icons**
+
+---
+
+## Quick Start
+Clone, install, and run locally:
+
+```sh
+git clone https://github.com/jellyfishing2346/portfolio.git
+cd portfolio
+npm install
+npm run dev
+```
+
+---
+
+## Deployment
+This site is deployed on Netlify, but it's also ready for Vercel or your favorite platform.
+
+---
+
+## License
+MIT — see [LICENSE](LICENSE) for details.
 
 ## Getting Started
 
