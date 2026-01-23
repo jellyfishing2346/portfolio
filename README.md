@@ -1,36 +1,50 @@
-<h1 align="center">👋 Hi, I'm jellyfishing2346</h1>
 
-Welcome to my software engineering portfolio! This site is a living showcase of my work, technical skills, and passion for building impactful products.
-
----
-
-## About This Portfolio
-This website is more than a résumé—it's a hands-on demonstration of my approach to software engineering:
-
-- **Real Projects:** Explore a curated selection of my software engineering and data science projects, each with context, challenges, and outcomes.
-- **Tech Stack in Action:** See how I use modern frameworks like Next.js, React, and Tailwind CSS to deliver fast, accessible, and beautiful user experiences.
-- **Personal Touch:** Get to know me through my About section, where I share my journey, values, and the technologies I love.
-- **Let's Connect:** Reach out directly via the contact form—I'm always open to new opportunities and collaborations.
-
----
-
-## Why This Site?
-I believe great engineering is about more than code—it's about solving real problems, learning continuously, and collaborating with others. This portfolio is my way of sharing that philosophy with you.
+<div align="center">
+	<h1>🚀 Faizan's Software Engineering Portfolio</h1>
+	<p>
+		<img src="https://img.shields.io/badge/Next.js-16.1.4-blue?logo=nextdotjs" alt="Next.js" />
+		<img src="https://img.shields.io/badge/Tailwind_CSS-4.1.18-38bdf8?logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+		<img src="https://img.shields.io/badge/React-19.2.3-61dafb?logo=react&logoColor=white" alt="React" />
+		<img src="https://img.shields.io/badge/TypeScript-5.x-3178c6?logo=typescript&logoColor=white" alt="TypeScript" />
+		<img src="https://img.shields.io/badge/Deployed%20on-Netlify-00c7b7?logo=netlify&logoColor=white" alt="Netlify" />
+		<img src="https://img.shields.io/badge/License-MIT-green" alt="MIT License" />
+	</p>
+	<p><b>Building products, solving problems, and having fun with code.</b></p>
+</div>
 
 ---
 
-## Technologies Used
-- **Next.js** (App Directory)
-- **React**
-- **Tailwind CSS**
-- **TypeScript**
-- **EmailJS** (Contact form)
-- **React Icons**
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/your-github-id/your-screenshot.png" alt="Portfolio Screenshot" width="80%"/>
+</p>
 
 ---
 
-## Quick Start
-Clone, install, and run locally:
+## ✨ About This Portfolio
+
+Welcome! This site is my digital playground and professional showcase. Here you'll find:
+
+🌟 <b>Impactful Projects:</b> Real-world software and data science work, with stories behind the code.<br>
+🎨 <b>Modern UI/UX:</b> Built with Next.js, React, and Tailwind CSS for a fast, beautiful experience.<br>
+💡 <b>My Story:</b> Learn about my journey, values, and what drives me as an engineer.<br>
+🤝 <b>Let's Connect:</b> Use the contact form to reach out—I'm open to new roles, collaborations, and coffee chats!
+
+---
+
+## 🛠️ Tech Stack
+
+<p>
+	<img src="https://img.shields.io/badge/Next.js-16.1.4-blue?logo=nextdotjs" alt="Next.js" />
+	<img src="https://img.shields.io/badge/React-19.2.3-61dafb?logo=react&logoColor=white" alt="React" />
+	<img src="https://img.shields.io/badge/Tailwind_CSS-4.1.18-38bdf8?logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+	<img src="https://img.shields.io/badge/TypeScript-5.x-3178c6?logo=typescript&logoColor=white" alt="TypeScript" />
+	<img src="https://img.shields.io/badge/EmailJS-Contact_Form-0077b5?logo=emailjs&logoColor=white" alt="EmailJS" />
+	<img src="https://img.shields.io/badge/React_Icons-Icon_Library-61dafb?logo=react&logoColor=white" alt="React Icons" />
+</p>
+
+---
+
+## 🚦 Quick Start
 
 ```sh
 git clone https://github.com/jellyfishing2346/portfolio.git
@@ -41,45 +55,17 @@ npm run dev
 
 ---
 
-## Deployment
-This site is deployed on Netlify, but it's also ready for Vercel or your favorite platform.
+## 🌍 Deployment
+Deployed on Netlify, but ready for Vercel or your favorite platform.
 
 ---
 
-## License
+## 📫 Contact
+
+Want to chat about a project, opportunity, or just say hi? [Open an issue](https://github.com/jellyfishing2346/portfolio/issues) or use the contact form on the site!
+
+---
+
+## 📝 License
+
 MIT — see [LICENSE](LICENSE) for details.
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
