@@ -15,7 +15,7 @@
 ---
 
 <p align="center">
-	<img src="https://user-images.githubusercontent.com/your-github-id/your-screenshot.png" alt="Portfolio Screenshot" width="80%"/>
+	<img src="Portfolio-Screenshot.png" alt="Portfolio Screenshot" width="80%"/>
 </p>
 
 ---
