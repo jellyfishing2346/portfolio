@@ -2,31 +2,33 @@ import { techStack } from "../../components/TechIcons";
 
 export default function About() {
   return (
-    <section className="max-w-3xl mx-auto py-16 px-4">
-      <h1 className="text-4xl font-bold mb-4">About Me</h1>
-      <p className="text-lg text-zinc-700 dark:text-zinc-300 mb-6">
-        Growing up in Brooklyn as the son of Pakistani immigrants, I learned early on that dedication can solve even the most complex problems. My journey in software engineering began with a drive to create smart systems—especially in AI and data science—that make a real difference in everyday life. Whether I’m building tools that forecast financial trends or developing conversational AI, I always focus on delivering clear, scalable business value.
-        <br /><br />
-        I’m passionate about using technology to improve the world around me, and I thrive on challenges that require both creativity and discipline. Outside of coding, you’ll find me on the soccer field chasing a win, at the gym pushing my limits, or exploring Brooklyn’s food scene with friends. I love the energy of a good match, the focus of a tough workout, and the laughter that comes from sharing stories over a great meal. These moments keep me balanced, inspired, and ready to tackle whatever comes next.
-      </p>
-      <div className="mt-10">
-        <h2 className="text-2xl font-semibold mb-4">Languages, Frameworks & Tools</h2>
+    <main className="min-h-screen bg-white flex flex-col items-center justify-center px-4 py-16">
+      <section className="w-full max-w-3xl text-center mb-16">
+        <h1 className="text-5xl font-bold mb-4 text-zinc-900">About Me</h1>
+        <p className="text-lg text-zinc-700 mb-8">
+          Hi, I'm Faizan—a Brooklyn native with a passion for learning, growth, and community. My story starts in a vibrant neighborhood, where curiosity and resilience shaped my approach to life and technology. I believe in the power of dedication, not just to solve problems, but to build meaningful connections and create positive change.
+          <br /><br />
+          Beyond my work as a software engineer and data scientist, I’m someone who values teamwork, creativity, and balance. Whether I’m strategizing on the soccer field, pushing my limits at the gym, or sharing a meal with friends, I find inspiration in every experience. I love exploring new ideas, cultures, and challenges—always striving to grow and help others do the same. My journey is about more than code; it’s about making a difference, one project and one relationship at a time.
+        </p>
+      </section>
+      <section className="w-full max-w-4xl">
+        <h2 className="text-3xl font-bold mb-8 text-zinc-900 text-center">Languages, Frameworks & Tools</h2>
         <div className="space-y-8">
           {techStack.map((category) => (
             <div key={category.category}>
-              <h3 className="text-xl font-bold mb-2 text-blue-700 dark:text-blue-300">{category.category}</h3>
-              <div className="flex flex-wrap gap-6">
+              <h3 className="text-xl font-bold mb-2 text-blue-700">{category.category}</h3>
+              <div className="flex flex-wrap gap-6 justify-center">
                 {category.items.map((tech) => (
                   <div key={tech.name} className="flex flex-col items-center w-20">
                     <div className="text-4xl mb-2">{tech.icon}</div>
-                    <span className="text-sm text-zinc-700 dark:text-zinc-300 text-center">{tech.name}</span>
+                    <span className="text-sm text-zinc-700 text-center">{tech.name}</span>
                   </div>
                 ))}
               </div>
             </div>
           ))}
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   );
 }

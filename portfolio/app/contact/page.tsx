@@ -32,32 +32,37 @@ export default function Contact() {
   };
 
   return (
-    <section className="max-w-2xl mx-auto py-16 px-4">
-      <h1 className="text-4xl font-bold mb-4">Contact</h1>
-      <p className="text-lg text-zinc-700 dark:text-zinc-300 mb-6">
-        Feel free to reach out for collaboration or just to say hi!
-      </p>
-      <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4 mb-8">
-        <input type="text" name="name" placeholder="Your Name" required className="px-4 py-2 rounded border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100" />
-        <input type="email" name="email" placeholder="Your Email" required className="px-4 py-2 rounded border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100" />
-        <textarea name="message" placeholder="Your Message" required rows={5} className="px-4 py-2 rounded border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100" />
-        <button type="submit" className="px-6 py-2 rounded bg-blue-600 text-white font-semibold hover:bg-blue-700 transition self-start">
-          Send Message
-        </button>
-        {sent && <p className="text-green-600">Message sent!</p>}
-        {error && <p className="text-red-600">{error}</p>}
-      </form>
-      <div className="flex gap-6 mt-4">
-        <a href="mailto:faizanakhan2003@gmail.com" aria-label="Email" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 text-2xl">
-          <EmailIcon />
-        </a>
-        <a href="https://www.linkedin.com/in/faizan-khan234" aria-label="LinkedIn" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 text-2xl">
-          <LinkedInIcon />
-        </a>
-        <a href="https://github.com/jellyfishing2346" aria-label="GitHub" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 text-2xl">
-          <GitHubIcon />
-        </a>
-      </div>
-    </section>
+    <main className="min-h-screen bg-white flex flex-col items-center justify-center px-4 py-16">
+      <section className="w-full max-w-2xl text-center mb-16">
+        <h1 className="text-5xl font-bold mb-4 text-zinc-900">Contact</h1>
+        <p className="text-lg text-zinc-700 mb-8">
+          Feel free to reach out for collaboration or just to say hi!
+        </p>
+        <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4 mb-8 items-center">
+          <input type="text" name="name" placeholder="Your Name" required className="px-4 py-2 rounded border border-zinc-300 bg-white text-zinc-900 w-full max-w-md" />
+          <input type="email" name="email" placeholder="Your Email" required className="px-4 py-2 rounded border border-zinc-300 bg-white text-zinc-900 w-full max-w-md" />
+          <textarea name="message" placeholder="Your Message" required rows={5} className="px-4 py-2 rounded border border-zinc-300 bg-white text-zinc-900 w-full max-w-md" />
+          <button
+            type="submit"
+            className="px-6 py-2 rounded bg-blue-600 text-white font-extrabold text-lg shadow-lg underline underline-offset-4 decoration-pink-400 hover:bg-blue-700 transition mt-2"
+          >
+            Send Message
+          </button>
+          {sent && <p className="text-green-600">Message sent!</p>}
+          {error && <p className="text-red-600">{error}</p>}
+        </form>
+        <div className="flex gap-6 mt-4 justify-center">
+          <a href="mailto:faizanakhan2003@gmail.com" aria-label="Email" className="text-blue-600 hover:text-blue-800 text-2xl">
+            <EmailIcon />
+          </a>
+          <a href="https://www.linkedin.com/in/faizan-khan234" aria-label="LinkedIn" className="text-blue-600 hover:text-blue-800 text-2xl">
+            <LinkedInIcon />
+          </a>
+          <a href="https://github.com/jellyfishing2346" aria-label="GitHub" className="text-blue-600 hover:text-blue-800 text-2xl">
+            <GitHubIcon />
+          </a>
+        </div>
+      </section>
+    </main>
   );
 }
