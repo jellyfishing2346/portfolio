@@ -32,11 +32,11 @@ export const techStack = [
     category: "Frameworks & Libraries",
     items: [
       { name: "React", icon: <FaReact className="text-cyan-400" /> },
-      { name: "Next.js", icon: <SiNextdotjs className="text-black dark:text-white" /> },
+      { name: "Next.js", icon: <SiNextdotjs className="text-gray-800" /> },
       { name: "Node.js", icon: <FaNodeJs className="text-green-600" /> },
-      { name: "Express.js", icon: <SiExpress className="text-black dark:text-white" /> },
+      { name: "Express.js", icon: <SiExpress className="text-gray-800" /> },
       { name: "Redux", icon: <SiRedux className="text-purple-600" /> },
-      { name: "Flask", icon: <SiFlask className="text-black dark:text-white" /> },
+      { name: "Flask", icon: <SiFlask className="text-gray-800" /> },
       { name: "Django", icon: <SiDjango className="text-green-900" /> },
       { name: "FastAPI", icon: <SiFastapi className="text-green-500" /> },
       { name: "Bootstrap", icon: <SiBootstrap className="text-purple-700" /> },
@@ -45,8 +45,6 @@ export const techStack = [
       { name: "Material UI", icon: <SiMui className="text-blue-500" /> },
       { name: "Keras", icon: <SiKeras className="text-red-500" /> },
       { name: "PyTorch", icon: <SiPytorch className="text-orange-600" /> },
-      // TensorFlow, scikit-learn, Pandas, NumPy, Matplotlib, and Seaborn icons are not available in react-icons/si
-      // You may add custom SVGs or use a placeholder if needed
       { name: "Plotly", icon: <SiPlotly className="text-pink-400" /> },
       { name: "Jupyter", icon: <SiJupyter className="text-orange-400" /> },
     ],
@@ -56,14 +54,10 @@ export const techStack = [
     items: [
       { name: "MongoDB", icon: <SiMongodb className="text-green-700" /> },
       { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-700" /> },
-      // MySQL icon is not available in react-icons/si
-      // { name: "MySQL", icon: <SiMysql className="text-blue-800" /> },
       { name: "Redis", icon: <SiRedis className="text-red-600" /> },
       { name: "AWS", icon: <FaAws className="text-yellow-500" /> },
       { name: "Google Cloud", icon: <SiGooglecloud className="text-blue-400" /> },
-      // Azure DevOps and Azure Pipelines icon not available in react-icons/si
-      // { name: "Azure Pipelines", icon: <SiAzurepipelines className="text-blue-600" /> },
-      { name: "Vercel", icon: <SiVercel className="text-black dark:text-white" /> },
+      { name: "Vercel", icon: <SiVercel className="text-gray-800" /> },
       { name: "Netlify", icon: <SiNetlify className="text-green-500" /> },
       { name: "Heroku", icon: <SiHeroku className="text-purple-700" /> },
     ],
@@ -72,13 +66,11 @@ export const techStack = [
     category: "DevOps & Tools",
     items: [
       { name: "Git", icon: <FaGitAlt className="text-orange-600" /> },
-      { name: "GitHub", icon: <FaGithub className="text-black dark:text-white" /> },
+      { name: "GitHub", icon: <FaGithub className="text-gray-800" /> },
       { name: "Docker", icon: <FaDocker className="text-blue-400" /> },
-      { name: "Linux", icon: <FaLinux className="text-black dark:text-white" /> },
+      { name: "Linux", icon: <FaLinux className="text-gray-800" /> },
       { name: "Jenkins", icon: <SiJenkins className="text-red-700" /> },
       { name: "Anaconda", icon: <SiAnaconda className="text-green-700" /> },
-      // VS Code icon is not available in react-icons/si
-      // { name: "VS Code", icon: <SiVisualstudiocode className="text-blue-500" /> },
       { name: "Apache Airflow", icon: <SiApacheairflow className="text-green-400" /> },
       { name: "Selenium", icon: <SiSelenium className="text-green-600" /> },
     ],
@@ -88,7 +80,6 @@ export const techStack = [
     items: [
       { name: "Tableau", icon: <SiTableau className="text-orange-400" /> },
       // Power BI icon is not available in react-icons/si
-      // { name: "Power BI", icon: <SiPowerbi className="text-yellow-500" /> },
     ],
   },
 ];
