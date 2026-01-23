@@ -62,7 +62,7 @@ Deployed on Netlify, but ready for Vercel or your favorite platform.
 
 ## 📫 Contact
 
-Want to chat about a project, opportunity, or just say hi? [Open an issue](https://github.com/jellyfishing2346/portfolio/issues) or use the contact form on the site!
+Want to chat about a project, opportunity, or just say hi? or use the contact form on the site!
 
 ---
 
