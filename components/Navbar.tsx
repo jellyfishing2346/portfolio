@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ThemeToggle from "./ThemeToggle";
 export default function Navbar() {
   return (
     <nav className="w-full py-4 px-8 flex justify-between items-center bg-white shadow-lg shadow-blue-200/50">
@@ -7,7 +8,9 @@ export default function Navbar() {
         <Link href="/" className="hover:text-pink-500 transition-colors font-semibold">Home</Link>
         <Link href="/about" className="hover:text-pink-500 transition-colors font-semibold">About</Link>
         <Link href="/projects" className="hover:text-pink-500 transition-colors font-semibold">Projects</Link>
+        <Link href="/blog" className="hover:text-pink-500 transition-colors font-semibold">Blog</Link>
         <Link href="/contact" className="hover:text-pink-500 transition-colors font-semibold">Contact</Link>
+        <ThemeToggle />
       </div>
     </nav>
   );
