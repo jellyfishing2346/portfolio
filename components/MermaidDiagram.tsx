@@ -1,3 +1,5 @@
+
+"use client";
 import { useEffect, useRef } from 'react';
 
 interface MermaidDiagramProps {
@@ -8,14 +10,18 @@ export default function MermaidDiagram({ code }: MermaidDiagramProps) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    import('mermaid').then((mermaid) => {
-      if (ref.current) {
+    let isMounted = true;
+    (async () => {
+      const mermaid = await import('mermaid');
+      if (ref.current && isMounted) {
         mermaid.default.initialize({ startOnLoad: false, theme: 'neutral' });
-        mermaid.default.render('mermaid-svg', code, (svgCode) => {
-          if (ref.current) ref.current.innerHTML = svgCode;
-        });
+        const { svg } = await mermaid.default.render('mermaid-svg', code);
+        if (ref.current) ref.current.innerHTML = svg;
       }
-    });
+    })();
+    return () => {
+      isMounted = false;
+    };
   }, [code]);
 
   return <div ref={ref} className="w-full overflow-x-auto my-2" />;

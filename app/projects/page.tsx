@@ -83,7 +83,7 @@ export default function Projects() {
 								.map((project) => (
 									<div
 										key={project.title}
-										className="rounded-lg border border-zinc-200 p-6 bg-white shadow hover:shadow-lg transition-shadow"
+										className="card"
 									>
 										<h3 className="text-xl font-semibold mb-2 text-zinc-900">
 											{project.title}
@@ -102,7 +102,7 @@ export default function Projects() {
 										<div className="flex flex-wrap gap-3 mb-4 justify-center">
 											<a
 												href={project.link}
-												className="inline-block px-4 py-2 bg-zinc-900 text-white rounded hover:bg-zinc-800 transition-colors"
+												className="btn-primary bg-zinc-900 hover:bg-zinc-800"
 												target="_blank"
 												rel="noopener noreferrer"
 											>
@@ -111,7 +111,7 @@ export default function Projects() {
 											{project.demo && project.demo !== '#' && (
 												<a
 													href={project.demo}
-													className="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
+													className="btn-primary"
 													target="_blank"
 													rel="noopener noreferrer"
 												>
