@@ -1,77 +1,182 @@
 import Image from "next/image";
-import GitHubStats from "../components/GitHubStats";
+import Link from "next/link";
 import FadeIn from "../components/FadeIn";
 import TypedText from "../components/TypedText";
+import GitHubStats from "../components/GitHubStats";
+import { GitHubIcon, LinkedInIcon, EmailIcon } from "../components/SocialIcons";
+
+const featured = [
+  {
+    title: "Travelingo",
+    description:
+      "Full-stack travel planning app — discover destinations, build itineraries, share experiences. React + Node.js + MongoDB.",
+    tech: ["React", "Node.js", "MongoDB", "Express.js"],
+    link: "https://github.com/jellyfishing2346/travelingo/",
+  },
+  {
+    title: "AI Chatbot",
+    description:
+      "Conversational AI with streaming responses built on Next.js and the OpenAI API, deployed with a clean chat UI.",
+    tech: ["Next.js", "OpenAI", "TypeScript"],
+    link: "#",
+  },
+  {
+    title: "Data Dashboard",
+    description:
+      "Interactive data visualization dashboard with real-time filtering and animated D3.js charts built in React.",
+    tech: ["React", "D3.js", "Python", "Tailwind CSS"],
+    link: "#",
+  },
+];
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center px-4 py-16">
-      <FadeIn delay={0.1}>
-        <section className="w-full max-w-3xl text-center mb-16">
-          <div className="flex justify-center mb-6">
+    <>
+      {/* ── Hero ──────────────────────────────────────────── */}
+      <section className="min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center text-center px-6 py-20">
+        <FadeIn delay={0.05}>
+          <div className="relative mb-8 inline-block">
+            <div className="absolute -inset-1.5 rounded-full bg-gradient-to-tr from-blue-500 via-purple-500 to-pink-500 blur-sm opacity-60" />
             <Image
               src="https://avatars.githubusercontent.com/jellyfishing2346"
               alt="Faizan Khan"
-              width={120}
-              height={120}
-              className="rounded-full border-4 border-blue-500 shadow-lg"
+              width={128}
+              height={128}
+              className="relative rounded-full border-2 border-white dark:border-zinc-950 shadow-xl"
+              priority
             />
           </div>
-          <h1 className="text-5xl font-bold mb-3 text-zinc-900 dark:text-zinc-100">Hi, I&apos;m Faizan Khan</h1>
-          <div className="mb-6 h-9">
+        </FadeIn>
+
+        <FadeIn delay={0.15}>
+          <p className="text-blue-600 dark:text-blue-400 font-semibold text-sm tracking-widest uppercase mb-3">
+            Welcome to my portfolio
+          </p>
+          <h1 className="text-5xl md:text-6xl font-bold text-zinc-900 dark:text-zinc-100 mb-4">
+            Faizan Khan
+          </h1>
+          <div className="h-10 mb-6">
             <TypedText />
           </div>
-          <p className="text-lg text-zinc-700 dark:text-zinc-300 mb-8">
-            My pursuit of software engineering, a career focused on building smart systems (AI) that predict outcomes, was fueled by a simple truth I learned growing up in Brooklyn, the son of Pakistani immigrants: dedication solves complex problems. After high school, I was driven by a passion for writing code that improves everyday life. I am a versatile Software Engineer who uses advanced tools—from those that forecast financial trends to modern conversational AI—always focusing on clear, scalable business value. My commitment extends beyond the screen; I find balance and discipline in soccer, exercise, and spending time with friends.
+          <p className="max-w-xl text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed mb-8">
+            Software Engineer &amp; Data Scientist from Brooklyn, NY — building
+            intelligent systems and full-stack applications that create
+            real-world impact.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="/projects"
-              className="px-6 py-2 rounded border border-blue-600 text-blue-600 font-semibold hover:bg-blue-50 dark:hover:bg-zinc-800 transition"
-            >
+        </FadeIn>
+
+        <FadeIn delay={0.25}>
+          <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
+            <Link href="/projects" className="btn-primary">
               View Projects
-            </a>
-            <a href="/contact" className="px-6 py-2 rounded border border-blue-600 text-blue-600 font-semibold hover:bg-blue-50 dark:hover:bg-zinc-800 transition">Contact Me</a>
-            <a
-              href="/resume.pdf"
-              download
-              className="px-6 py-2 rounded bg-blue-600 text-white font-semibold hover:bg-blue-700 transition"
-            >
+            </Link>
+            <a href="/resume.pdf" download className="btn-secondary">
               Download Resume
             </a>
           </div>
-        </section>
-      </FadeIn>
-      <FadeIn delay={0.3}>
-        <section className="w-full max-w-4xl">
-          <h3 className="text-3xl font-bold mb-8 text-zinc-900 dark:text-zinc-100 text-center">Featured Projects</h3>
-          <div className="grid gap-8 md:grid-cols-2">
-            <div className="rounded-lg border border-zinc-200 dark:border-zinc-700 p-6 bg-white dark:bg-zinc-900 shadow hover:shadow-lg transition-shadow">
-              <h4 className="text-2xl font-semibold mb-2">AI Chatbot</h4>
-              <p className="text-zinc-700 dark:text-zinc-300 mb-4">A conversational AI chatbot built with Next.js and OpenAI API.</p>
-              <div className="flex flex-wrap gap-2 mb-2">
-                <span className="px-2 py-1 bg-zinc-100 dark:bg-zinc-800 rounded text-sm text-zinc-600 dark:text-zinc-300">Next.js</span>
-                <span className="px-2 py-1 bg-zinc-100 dark:bg-zinc-800 rounded text-sm text-zinc-600 dark:text-zinc-300">OpenAI</span>
-                <span className="px-2 py-1 bg-zinc-100 dark:bg-zinc-800 rounded text-sm text-zinc-600 dark:text-zinc-300">TypeScript</span>
-              </div>
-              <a href="/projects" className="text-blue-600 dark:text-blue-400 hover:underline text-sm">Learn More</a>
-            </div>
-            <div className="rounded-lg border border-zinc-200 dark:border-zinc-700 p-6 bg-white dark:bg-zinc-900 shadow hover:shadow-lg transition-shadow">
-              <h4 className="text-2xl font-semibold mb-2">Data Dashboard</h4>
-              <p className="text-zinc-700 dark:text-zinc-300 mb-4">Interactive dashboard for data visualization using React and D3.js.</p>
-              <div className="flex flex-wrap gap-2 mb-2">
-                <span className="px-2 py-1 bg-zinc-100 dark:bg-zinc-800 rounded text-sm text-zinc-600 dark:text-zinc-300">React</span>
-                <span className="px-2 py-1 bg-zinc-100 dark:bg-zinc-800 rounded text-sm text-zinc-600 dark:text-zinc-300">D3.js</span>
-                <span className="px-2 py-1 bg-zinc-100 dark:bg-zinc-800 rounded text-sm text-zinc-600 dark:text-zinc-300">Tailwind CSS</span>
-              </div>
-              <a href="/projects" className="text-blue-600 dark:text-blue-400 hover:underline text-sm">Learn More</a>
-            </div>
+
+          <div className="flex items-center justify-center gap-5 text-zinc-400 dark:text-zinc-500 text-xl">
+            <a
+              href="https://github.com/jellyfishing2346"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+            >
+              <GitHubIcon />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/faizan-khan234"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+            >
+              <LinkedInIcon />
+            </a>
+            <a
+              href="mailto:faizanakhan2003@gmail.com"
+              aria-label="Email"
+              className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+            >
+              <EmailIcon />
+            </a>
           </div>
-        </section>
-      </FadeIn>
-      <FadeIn delay={0.5}>
-        <GitHubStats />
-      </FadeIn>
-    </main>
+        </FadeIn>
+      </section>
+
+      {/* ── Featured Projects ─────────────────────────────── */}
+      <section className="divider">
+        <div className="section">
+          <FadeIn delay={0.05}>
+            <div className="text-center mb-12">
+              <h2 className="section-title">Featured Projects</h2>
+              <p className="section-subtitle">A selection of my recent work</p>
+            </div>
+          </FadeIn>
+          <div className="grid md:grid-cols-3 gap-6">
+            {featured.map((project) => (
+              <FadeIn key={project.title} delay={0.1}>
+                <div className="card flex flex-col h-full">
+                  <h3 className="text-lg font-bold text-zinc-900 dark:text-zinc-100 mb-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed mb-4 flex-1">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-1.5 mb-4">
+                    {project.tech.map((t) => (
+                      <span key={t} className="tag">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                  {project.link !== "#" && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline"
+                    >
+                      View on GitHub ↗
+                    </a>
+                  )}
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link href="/projects" className="btn-secondary">
+              View All Projects →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ── GitHub Stats ──────────────────────────────────── */}
+      <section className="divider">
+        <div className="section">
+          <div className="text-center mb-12">
+            <h2 className="section-title">GitHub Activity</h2>
+            <p className="section-subtitle">Open source contributions &amp; stats</p>
+          </div>
+          <GitHubStats />
+        </div>
+      </section>
+
+      {/* ── CTA ───────────────────────────────────────────── */}
+      <section className="divider">
+        <div className="section text-center">
+          <h2 className="section-title">Let&apos;s Work Together</h2>
+          <p className="section-subtitle max-w-lg mx-auto mt-3 mb-8">
+            I&apos;m open to full-time roles, internships, and interesting side
+            projects. Reach out and let&apos;s build something.
+          </p>
+          <Link href="/contact" className="btn-primary">
+            Get in Touch
+          </Link>
+        </div>
+      </section>
+    </>
   );
 }
